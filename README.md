@@ -1,6 +1,6 @@
 CODING ADVENTURE
 
-1. ¿Cuándo tengo que usar un callback?
+1. ¿Cuándo tengo que usar useCallback()?
 2. Tienes que crear un componente que muestre una cuenta atrás en el tiempo. En esta captura puedes ver cómo tiene que quedar. En este punto tendrás que crear sólo el HTML y hacer que el contador se vea en pantalla.
 3. Dale estilos al componente contador (utiliza styled-components).
 4. Dale la funcionalidad. Guarda la fecha clave en una constante que puedas usar en cualquier componente.
