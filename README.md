@@ -1,46 +1,10 @@
-# Getting Started with Create React App
+CODING ADVENTURE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. ¿Cuándo tengo que usar un callback?
+2. Tienes que crear un componente que muestre una cuenta atrás en el tiempo. En esta captura puedes ver cómo tiene que quedar. En este punto tendrás que crear sólo el HTML y hacer que el contador se vea en pantalla.
+3. Dale estilos al componente contador (utiliza styled-components).
+4. Dale la funcionalidad. Guarda la fecha clave en una constante que puedas usar en cualquier componente.
+5. Crea dos rutas: /home y /register. En /home debe verse el contador si aún no ha llegado la fecha clave, y si ya ha pasado debe verse un encabezado.
+6. En /register debe verse un encabezado si ya ha llegado la fecha clave, o redirigir a /home si aún no ha llegado.
+7. Crea una API REST. Crea un endpoint GET /launch-date que devuelva la fecha clave.
+8. Cambia el front para que la fecha clave no la coja de una constante sino que se la pida a la API.
