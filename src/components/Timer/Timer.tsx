@@ -1,8 +1,8 @@
-import "./TimerStyled.css";
+import TimerStyled from "./TimerStyled";
 
 const Timer = (): JSX.Element => {
   return (
-    <ul className="timer">
+    <TimerStyled>
       <li className="timer__component">
         <span className="timer__data">02</span>
         <span className="timer__name">days</span>
@@ -19,7 +19,7 @@ const Timer = (): JSX.Element => {
         <span className="timer__data">09</span>
         <span className="timer__name">second</span>
       </li>
-    </ul>
+    </TimerStyled>
   );
 };
 
