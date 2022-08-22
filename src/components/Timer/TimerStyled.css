@@ -1,4 +1,4 @@
-ul {
+.timer {
   width: fit-content;
   height: fit-content;
   padding: 20px;
@@ -7,12 +7,11 @@ ul {
   flex-direction: row;
   gap: 15px;
 }
-li {
+.timer__component {
   display: flex;
   flex-direction: column;
 }
-li :first-child {
-  font-family: "Rajdhani", sans-serif;
+.timer__data {
   font-weight: 600;
   font-size: 1.7rem;
   width: 4rem;
@@ -23,8 +22,7 @@ li :first-child {
   display: grid;
   place-items: center;
 }
-li :last-child {
-  font-family: "Rajdhani", sans-serif;
+.timer__name {
   font-weight: 600;
   color: #b6d3e6;
   text-align: center;
