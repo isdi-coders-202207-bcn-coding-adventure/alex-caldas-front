@@ -1,3 +1,4 @@
+import "@fontsource/oxanium";
 import Layout from "./components/Layout/Layout";
 
 const App = (): JSX.Element => {
