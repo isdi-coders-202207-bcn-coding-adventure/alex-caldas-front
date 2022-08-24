@@ -2,31 +2,43 @@ import { useState } from "react";
 import TimerStyled from "./TimerStyled";
 
 const Timer = (): JSX.Element => {
-  interface Time {
-    days: number;
-    hours: number;
-    minutes: number;
-    seconds: number;
-  }
-
-  const initialState: Time = {
-    days: 31,
-    hours: 24,
-    minutes: 60,
-    seconds: 60,
+  const initialDate = {
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
   };
 
-  const [state, setState] = useState(initialState);
+  const endDate = new Date();
+  endDate.setFullYear(2022);
+  endDate.setMonth(7); // Month from 0 to 11
+  endDate.setDate(25);
+  endDate.setHours(0);
+  endDate.setMinutes(0);
+  endDate.setSeconds(0);
+
+  const [state, setState] = useState(initialDate);
 
   setInterval(() => {
-    const date = new Date();
-    const newDate: Time = {
-      days: initialState.days - date.getDay(),
-      hours: initialState.hours - date.getHours(),
-      minutes: initialState.minutes - date.getMinutes(),
-      seconds: initialState.seconds - date.getSeconds(),
+    const now = new Date().getTime();
+    const time = endDate.getTime() - now;
+
+    const result = {
+      days: 0,
+      hours: 0,
+      minutes: 0,
+      seconds: 0,
     };
-    setState(newDate);
+
+    if (time >= 0) {
+      result.days = Math.floor(time / (1000 * 60 * 60 * 24));
+      result.hours = Math.floor(
+        (time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      result.minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+      result.seconds = Math.floor((time % (1000 * 60)) / 1000);
+    }
+    setState(result);
   }, 1000);
 
   return (
